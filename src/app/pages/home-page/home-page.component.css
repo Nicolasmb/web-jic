@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+video {
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+
+.tarjeta-textos {
+    background-color: white;
+    color: black;
+}
+
+
+.tarjeta-textos:hover {
+    background-color: #181818;
+    color: white;
+}
+
+
+.tarjeta-textos h4 {
+    display: block;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+
+.tarjeta-textos h4::before {
+    position: absolute;
+    left: 2px;
+    bottom: -1.5rem;
+    width: 2.5rem;
+    height: 3px;
+    border-radius: 1px;
+    background-color: var(--color-secondary);
+    content: "";
+}
+
+
+.tarjeta-imagen {
+    position: relative;
+    height: 32rem;
+}
+
+
+.tarjeta-imagen-filtro {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11,11,11,0.4);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 300ms ease, opacity 300ms ease;
+}
+
+
+.tarjeta-imagen-titulo {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1rem;
+    margin: 0 0 2rem 2rem;
+    padding: 0.6rem;
+    /* background-color: red; */
+}
+
+.tarjeta-imagen-titulo::before {
+    content: "JIC | ";
+    font-stretch: expanded;
+    font-weight: bold;
+    color: var(--color-secondary);
+    filter: grayscale(0.1);
+    font-family: 'Syncopate', sans-serif;
+}
+
+
+.tarjeta-imagen:hover .tarjeta-imagen-filtro {
+    visibility: visible;
+    opacity: 1;
+}
+

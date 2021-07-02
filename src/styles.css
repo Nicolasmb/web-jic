@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    font-size: 16px;
+    --color-primary: black;
+    --color-secondary: #DA0100;
+    --transition-speed: 300ms;
+}
+
+
+/* Un PSEUDOELEMENTO CSS se utiliza para dar formato a partes específicas de un elemento.
+   Por ejemplo: 
+    - Se puede utilizar para: Aplicar estilo a la primera letra o línea de un elemento 
+    - Insertar contenido antes o después del contenido de un elemento. */
+
+/* Cambiamos el ancho la barra de desplazamiento */
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+
+
+  

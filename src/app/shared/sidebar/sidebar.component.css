@@ -1,0 +1,97 @@
+
+.sidebar {
+    width: 5rem;
+    /* La unidad vh es relativa a la altura del ventana, 1vh es igual al 1% de la altura de la misma.*/
+    height: 100vh; 
+    position: fixed;
+    padding-top: 5rem;
+    background-color: var(--color-primary);
+    transition: width var(--transition-speed) ease;
+    z-index: 1;
+}
+
+
+.sidebar:hover {
+    width: 17rem;
+}
+
+
+.sidebar:hover .link-text {
+    display: block;
+    text-overflow: clip;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+
+.sidebar-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+.sidebar-item {
+    width: 100%;
+}
+
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 5rem;
+    margin-left: 0;
+    padding-left: 0;
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+
+.sidebar-link:hover {
+    background-color: white;
+}
+
+
+.sidebar-link:hover > .link-text {
+    color: black;
+}
+
+
+.sidebar-link:hover > .sidebar-icon {
+    color: var(--color-secondary);
+}
+
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    color: white;
+    transition: var(--transition-speed);
+    font-weight: 400;
+    letter-spacing: .2em;
+}
+
+
+.sidebar-icon {
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 1rem;
+    width: 3rem;
+    min-width: 3rem;
+    transition: var(--transition-speed);
+}
+
+
+.sidebar-icon i {
+    font-size: 1.5rem;
+}
+
+
+/* Pseudoselector "last-child" */
+.sidebar-item:last-child {
+    margin-top: auto;
+}
+
