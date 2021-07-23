@@ -9,6 +9,13 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './shared/footer/footer.component';
+import { WhatsappComponent } from './shared/whatsapp/whatsapp.component';
+import { ProyectoLagunaComponent } from './pages/proyecto-laguna/proyecto-laguna.component';
+import { ProyectoPadreArietaComponent } from './pages/proyecto-padre-arieta/proyecto-padre-arieta.component';
+import { ProyectoJujuyComponent } from './pages/proyecto-jujuy/proyecto-jujuy.component';
+import { ProyectoArietaComponent } from './pages/proyecto-arieta/proyecto-arieta.component';
+import { ProyectoTerravistaComponent } from './pages/proyecto-terravista/proyecto-terravista.component';
 
 
 
@@ -18,6 +25,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     HomePageComponent,
     SidebarComponent,
+    FooterComponent,
+    WhatsappComponent,
+    ProyectoLagunaComponent,
+    ProyectoPadreArietaComponent,
+    ProyectoJujuyComponent,
+    ProyectoArietaComponent,
+    ProyectoTerravistaComponent
   ],
   imports: [
     BrowserModule,

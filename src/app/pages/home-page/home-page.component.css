@@ -43,6 +43,11 @@ video {
 }
 
 
+.pointer {
+    cursor: pointer;
+}
+
+
 .tarjeta-imagen-filtro {
     display: flex;
     position: absolute;
